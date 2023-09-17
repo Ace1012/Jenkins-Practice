@@ -29,10 +29,5 @@ pipeline {
           echo yomama
         }
       }
-      stage('Log to console - Gerrit'){
-        steps{
-          echo "Gerrit"
-        }
-      }
     }
 }
