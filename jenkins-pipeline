@@ -1,7 +1,7 @@
 pipeline { 
   agent any
   stages { 
-    stage('Tests') {
+    stage('Log to console - Test') {
       steps { 
         sh 'npm run start'
       }
