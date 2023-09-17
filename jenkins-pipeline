@@ -1,5 +1,10 @@
 pipeline { 
   agent any
   stages { 
+    stage('Log to console - Test') {
+      steps { 
+        sh 'echo Yomama'
+      }
+    }
   }
 }
