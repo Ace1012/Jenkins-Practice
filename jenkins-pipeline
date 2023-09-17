@@ -25,7 +25,6 @@ pipeline {
 
     stages { 
       stage('Log to console - Yomama') {
-
         steps { 
           echo yomama
         }
