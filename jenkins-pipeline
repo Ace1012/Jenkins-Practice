@@ -24,10 +24,15 @@ pipeline {
     agent any
 
     stages { 
-      stage('Log to console - Test') {
+      stage('Log to console - Yomama') {
 
         steps { 
-          echo 'Yomama'
+          echo yomama
+        }
+      }
+      stage('Log to console - Gerrit'){
+        steps{
+          echo "Gerrit"
         }
       }
     }
