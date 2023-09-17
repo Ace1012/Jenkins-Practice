@@ -1,0 +1,21 @@
+pipeline { 
+  agent any
+  stages { 
+    stage('clone repository') {
+      steps { 
+        git url: 'https://github.com/Kkigathi/java-todo'
+      }
+    }
+    stage('Build the project') {
+      steps { 
+        sh 'gradle build'
+      }
+    }
+    stage('Tests') {
+      steps { 
+        sh 'gradle test'
+      }
+    }
+   
+  }
+}
