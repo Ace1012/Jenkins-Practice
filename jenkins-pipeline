@@ -26,7 +26,12 @@ pipeline {
     stages { 
       stage('Log to console - Yomama') {
         steps { 
-          echo yomama
+          echo "yomama"
+        }
+      }
+      stage('Log to console - Gerrit'){
+        steps{
+          echo "Gerrit"
         }
       }
     }
