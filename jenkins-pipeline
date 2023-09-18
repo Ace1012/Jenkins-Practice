@@ -34,5 +34,10 @@ pipeline {
           echo "Gerrit"
         }
       }
+      stage('Log to console - Dude'){
+        steps{
+          echo "Dude"
+        }
+      }
     }
 }
