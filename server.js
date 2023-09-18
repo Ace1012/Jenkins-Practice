@@ -1,4 +1,4 @@
-const { capitalize } = require("lodash");
+import { capitalize } from "lodash";
 
 const myWord = "yomama";
 
