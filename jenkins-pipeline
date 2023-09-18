@@ -24,19 +24,19 @@ pipeline {
     agent any
 
     stages { 
-      stage('Log to console - Yomama') {
-        steps { 
-          echo "yomama"
+      stage("Checkout"){
+        steps{
+          git "https://github.com/Ace1012/Jenkins-Practice.git"
         }
       }
-      stage('Log to console - Gerrit'){
+      stage('Npm Install'){
         steps{
-          echo "Gerrit"
+          sh "npm run install"
         }
       }
-      stage('Log to console - Dude'){
+      stage('Run script'){
         steps{
-          echo "Dude"
+          sh "npm run start"
         }
       }
     }
