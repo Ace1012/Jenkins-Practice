@@ -1,4 +1,6 @@
-import { capitalize } from "lodash";
+import lodash from "lodash";
+
+const { capitalize } = lodash;
 
 const myWord = "yomama";
 
